@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './components/NavBar';
 
 function App() {
+
+  const estilos = {
+    width: "15cm"
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavBar/>
+      <div className="App">
+        <h1 className="title" style={
+          {fontSize: "5rem"}
+          }>Camilita te amo mucho!</h1>
+          <p style={{
+            fontSize: "5rem"
+          }}>Vamos a dormir?</p>
+          <input placeholder="Ingrese su respuesta" style={estilos}></input> 
+      </div>
+    </> 
   );
 }
 
