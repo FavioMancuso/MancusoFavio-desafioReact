@@ -4,20 +4,18 @@ import {FaApple} from 'react-icons/fa'
 import CartWidget from '../CartWidget';
 import './styles.css';
 
-const NavBar = (props) => {
-
-    console.log(props)
+const NavBar = () => {
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-light" style={{background: "#ebebeb"}}>
                 <div className="container-fluid">
                     <Link className="navbar-brand align-contents-center mx-2" to="#">YourPhone<FaApple className='fs-4 mb-2'/></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav mx-auto">
+                    <ul className="navbar-nav mx-auto d-flex align-items-center">
                         <li className="nav-item mx-1">
                         <Link className="nav-link" to="#">Home</Link>
                         </li>
@@ -37,8 +35,7 @@ const NavBar = (props) => {
                     </div>
                     <CartWidget/>
                 </div>
-                </nav>
-                
+            </nav>
         </div>
         
     )
