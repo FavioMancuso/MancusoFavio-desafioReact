@@ -1,20 +1,27 @@
 import React from 'react'
-import {FaApple} from 'react-icons/fa'
-import Darkmode from '../Darkmode';
-import { useState } from 'react'
+import { products } from '../../data/products';
 import ItemCount from '../ItemCount'
+import ItemList from '../ItemList';
 import './styles.css';
 
 const ItemListContainer = ({greeting}) => { // greeting -> prop
 
-    // Nombre del state, setNombreEstado
-    /*const [navColor , setNavColor] = useState("#f8f9fa")
+    (async()=> {
 
-    const onChangeColor = (event) => {
-        const color = event.target.value
-        setNavColor(color)
-    }
-    <Darkmode handleColor={onChangeColor}/> // en return //  style={{backgroundColor: navColor}} // en main*/
+        const getProducts = new Promise((accept, reject) => {
+    
+            setTimeout(() => {
+                accept(products)
+            }, 3000);
+        })
+
+        try {
+            const response = await getProducts
+            console.log(response);
+        } catch (error) {
+            console.log(error);
+        }
+    })()
 
     const addToCart = (cantidad) => {
         console.log(`Se agregaron ${cantidad} unidades al carrito`);
@@ -22,8 +29,8 @@ const ItemListContainer = ({greeting}) => { // greeting -> prop
 
     return (
         <div className='main px-4 pt-2 d-flex flex-column justify-content-between align-items-center'>
-            <h3 className='my-2'>{greeting}<FaApple className='mb-2'/></h3>
-            <ItemCount initial={1} stock={4} onAdd={addToCart}/>
+            <h3 className='my-2'>{greeting}</h3>
+            <ItemList products={products}/>
         </div>
         
     )

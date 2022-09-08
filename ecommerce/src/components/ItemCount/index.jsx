@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import iphone13promax2 from '../img/iphone13promax2.jpg'
+import iphone13promax2 from '../img/Buy iPhone 13 Pro Max 128GB Silver Verizon.jpg'
 import './styles.css'
 
 const ItemCount = ({initial, stock, onAdd}) => {
