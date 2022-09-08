@@ -11,14 +11,14 @@ export const products = [
         id: "2" ,
         name: "iPhone 12 Pro Max",
         description: "Pink - 128 GB",
-        img: 'https://i.postimg.cc/qB3G7QNt/i-Phone-13-Pro-de-128-GB-Color-pink.jpg',
+        img: 'https://i.postimg.cc/rm4DCkwX/descarga.jpg',
         stock: 4,
         precio: 160000
     },
     {
         id: "3" ,
         name: "iPhone 12 Pro Max",
-        description: "Bleu Alpin - 128 GB",
+        description: "Blue Alpin - 128 GB",
         img: 'https://i.postimg.cc/BQWyMXrz/Apple-i-Phone-13-Pro-128-Go-Bleu-Alpin.jpg',
         stock: 2,
         precio: 160000

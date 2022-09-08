@@ -1,3 +1,5 @@
 .main {
     background-color: white;
+    background-image: url("");
+    background-size: contain;
 }

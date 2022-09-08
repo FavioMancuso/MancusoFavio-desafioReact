@@ -1,27 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
 import { products } from '../../data/products';
-import ItemCount from '../ItemCount'
 import ItemList from '../ItemList';
 import './styles.css';
 
 const ItemListContainer = ({greeting}) => { // greeting -> prop
 
-    (async()=> {
+    const [catalogo, SetCatalogo] = useState([])
 
-        const getProducts = new Promise((accept, reject) => {
-    
-            setTimeout(() => {
-                accept(products)
-            }, 3000);
-        })
+    useEffect(() => {
 
-        try {
-            const response = await getProducts
-            console.log(response);
-        } catch (error) {
-            console.log(error);
-        }
-    })()
+        (async()=> {
+
+            const getProducts = new Promise((accept, reject) => {
+        
+                setTimeout(() => {
+                    accept(products)
+                }, 3000);
+            })
+
+            try {
+                const response = await getProducts
+                console.log(response);
+                SetCatalogo(response)
+            } catch (error) {
+                console.log(error);
+            }
+        })()
+
+    }, [])
 
     const addToCart = (cantidad) => {
         console.log(`Se agregaron ${cantidad} unidades al carrito`);
