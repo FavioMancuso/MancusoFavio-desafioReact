@@ -4,9 +4,9 @@ export const products = [
         name: "iPhone 12 Pro Max",
         description: "Silver - 128 GB",
         img: 'https://i.postimg.cc/rwMH27FC/Buy-i-Phone-13-Pro-Max-128-GB-Silver-Verizon.png',
-        stock: 12,
+        stock: 6,
         precio: 160000
-    },
+    }/*,
     {
         id: "2" ,
         name: "iPhone 12 Pro Max",
@@ -30,7 +30,7 @@ export const products = [
         img: 'https://i.postimg.cc/wThrP9Hj/iphone13promax2.jpg',
         stock: 8,
         precio: 160000
-    }
+    }*/
 ]
 
 

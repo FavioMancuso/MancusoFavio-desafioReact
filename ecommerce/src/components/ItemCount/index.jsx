@@ -22,9 +22,6 @@ const ItemCount = ({initial, stock, onAdd}) => {
     }
     return (
         <div className='py-4 d-flex flex-column align-items-center'>
-            <div className="h5 mb-0 pb-0">
-                iPhone 12 Pro Max
-            </div>
             <div className='h6 mb-3'>Confirmar unidades:</div>
             <div className='d-flex w-100 align-items-baseline justify-content-between'>
                 <button className='btn btn-success' onClick={handleAdd}>Add</button>

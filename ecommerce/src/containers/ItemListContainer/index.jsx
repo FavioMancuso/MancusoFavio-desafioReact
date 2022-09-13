@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import { products } from '../../data/products';
-import ItemList from '../ItemList';
+import ItemList from '../../components/ItemList';
 import './styles.css';
 
 const ItemListContainer = ({greeting}) => { // greeting -> prop
@@ -16,7 +16,7 @@ const ItemListContainer = ({greeting}) => { // greeting -> prop
         
                 setTimeout(() => {
                     accept(products)
-                }, 3000);
+                }, 1500);
             })
 
             try {
@@ -26,18 +26,15 @@ const ItemListContainer = ({greeting}) => { // greeting -> prop
             } catch (error) {
                 console.log(error);
             }
+    
         })()
 
-    }, [])
-
-    const addToCart = (cantidad) => {
-        console.log(`Se agregaron ${cantidad} unidades al carrito`);
-    }
+    }, []) 
 
     return (
         <div className='main px-4 pt-2 d-flex flex-column justify-content-between align-items-center'>
             <h3 className='my-2'>{greeting}</h3>
-            <ItemList products={products}/>
+            <ItemList products={catalogo}/>
         </div>
         
     )

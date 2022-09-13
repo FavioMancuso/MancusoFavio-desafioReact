@@ -1,6 +1,7 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer'
+import ItemDetailContainer from './containers/ItemDetailContainer';
+//import ItemListContainer from './containers/ItemListContainer'
 
 function App() {
 
@@ -8,7 +9,9 @@ function App() {
       <div className="App">
         <Router>
           <NavBar/>
-          <ItemListContainer greeting={'!Bienvenidxs a YourPhone!'}/>
+          {/*<ItemListContainer greeting={'Nuestros productos'}/>*/}
+          <ItemDetailContainer/>
+          
         </Router>
       </div>
   );
