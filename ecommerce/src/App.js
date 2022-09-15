@@ -1,19 +1,19 @@
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar';
 import ItemDetailContainer from './containers/ItemDetailContainer';
-//import ItemListContainer from './containers/ItemListContainer'
+import ItemListContainer from './containers/ItemListContainer'
 
 function App() {
 
   return (
-      <div className="App">
-        <Router>
-          <NavBar/>
-          {/*<ItemListContainer greeting={'Nuestros productos'}/>*/}
-          <ItemDetailContainer/>
-          
-        </Router>
-      </div>
+      <BrowserRouter>
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<ItemListContainer greeting={'Nuestros productos'}/>}/>
+          <Route path="/category/:categoryId" element={<ItemListContainer greeting={'Nuestros productos'}/>}/>
+          <Route path="/detail/:productId" element={<ItemDetailContainer/>}/>
+        </Routes>
+      </BrowserRouter>
   );
 
 }

@@ -1,0 +1,12 @@
+.template {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    margin: 2rem 2rem;
+    box-shadow: 3px black;
+}

@@ -17,19 +17,22 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav mx-auto d-flex align-items-center">
                         <li className="nav-item mx-1">
-                        <Link className="nav-link" to="#">Home</Link>
+                        <Link className="nav-link" to="/category/iphone">iPhone</Link>
                         </li>
                         <li className="nav-item mx-1">
-                        <Link className="nav-link" to="#">Productos</Link>
+                        <Link className="nav-link" to="/category/mcbook">MacBook</Link>
                         </li>
                         <li className="nav-item mx-1">
-                        <Link className="nav-link" to="#">Métodos de pago</Link>
+                        <Link className="nav-link" to="/category/ipad">iPad</Link>
                         </li>
                         <li className="nav-item mx-1">
-                        <Link className="nav-link" to="#">Novedades</Link>
+                        <Link className="nav-link" to="/category/apple watch">Apple Watch</Link>
                         </li>
                         <li className="nav-item mx-1">
-                        <Link className="nav-link" to="#">Contacto</Link>
+                        <Link className="nav-link" to="/category/airpods">Airpods</Link>
+                        </li>
+                        <li className="nav-item mx-1">
+                        <Link className="nav-link" to="/category/accessories">Accessories</Link>
                         </li>
                     </ul>
                     </div>
