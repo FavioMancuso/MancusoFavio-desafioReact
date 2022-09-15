@@ -5,7 +5,7 @@ import { products } from '../../data/products';
 
 const ItemDetailContainer = () => {
 
-    const [detalle, SetDetalle] = useState({})
+    const [detalle, SetDetalle] = useState([])
 
     useEffect(() => {
 
@@ -29,7 +29,9 @@ const ItemDetailContainer = () => {
 
     return (
         <div className='d-flex flex-column justify-content-between align-items-center'>
-            <Detail products={detalle}/>
+        {detalle.map(e => {
+            return <Detail products={e}></Detail>
+        })}
         </div>
     )
 }
