@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import ItemList from '../../components/ItemList';
+import { useParams } from 'react-router-dom';
 import './styles.css';
 const products = [
     {
@@ -9,7 +10,8 @@ const products = [
         description: "Silver - 128 GB",
         img: 'https://i.postimg.cc/rwMH27FC/Buy-i-Phone-13-Pro-Max-128-GB-Silver-Verizon.png',
         stock: 6,
-        precio: 160000
+        precio: 160000,
+        categoty: "iphone"
     },
     {
         id: "2" ,
@@ -17,7 +19,8 @@ const products = [
         description: "Pink - 128 GB",
         img: 'https://i.postimg.cc/rm4DCkwX/descarga.jpg',
         stock: 4,
-        precio: 160000
+        precio: 160000,
+        categoty: "iphone"
     },
     {
         id: "3" ,
@@ -25,7 +28,8 @@ const products = [
         description: "Blue Alpin - 128 GB",
         img: 'https://i.postimg.cc/BQWyMXrz/Apple-i-Phone-13-Pro-128-Go-Bleu-Alpin.jpg',
         stock: 2,
-        precio: 160000
+        precio: 160000,
+        categoty: "iphone"
     },
     {
         id: "4" ,
@@ -33,7 +37,8 @@ const products = [
         description: "Graphite - 128 GB",
         img: 'https://i.postimg.cc/wThrP9Hj/iphone13promax2.jpg',
         stock: 8,
-        precio: 160000
+        precio: 160000,
+        categoty: "accessories"
     },
     {
         id: "5" ,
@@ -41,7 +46,8 @@ const products = [
         description: "Pink - 128 GB",
         img: 'https://i.postimg.cc/rm4DCkwX/descarga.jpg',
         stock: 4,
-        precio: 160000
+        precio: 160000,
+        categoty: "iphone"
     },
     {
         id: "6" ,
@@ -49,7 +55,8 @@ const products = [
         description: "Blue Alpin - 128 GB",
         img: 'https://i.postimg.cc/BQWyMXrz/Apple-i-Phone-13-Pro-128-Go-Bleu-Alpin.jpg',
         stock: 2,
-        precio: 160000
+        precio: 160000,
+        categoty: "ipad"
     },
     {
         id: "7" ,
@@ -57,7 +64,8 @@ const products = [
         description: "Graphite - 128 GB",
         img: 'https://i.postimg.cc/wThrP9Hj/iphone13promax2.jpg',
         stock: 8,
-        precio: 160000
+        precio: 160000,
+        categoty: "ipad"
     },
     {
         id: "8" ,
@@ -65,7 +73,8 @@ const products = [
         description: "Pink - 128 GB",
         img: 'https://i.postimg.cc/rm4DCkwX/descarga.jpg',
         stock: 4,
-        precio: 160000
+        precio: 160000,
+        categoty: "iphone"
     },
     {
         id: "9" ,
@@ -73,7 +82,8 @@ const products = [
         description: "Blue Alpin - 128 GB",
         img: 'https://i.postimg.cc/BQWyMXrz/Apple-i-Phone-13-Pro-128-Go-Bleu-Alpin.jpg',
         stock: 2,
-        precio: 160000
+        precio: 160000,
+        categoty: "mcbook"
     },
     {
         id: "10" ,
@@ -81,7 +91,8 @@ const products = [
         description: "Graphite - 128 GB",
         img: 'https://i.postimg.cc/wThrP9Hj/iphone13promax2.jpg',
         stock: 8,
-        precio: 160000
+        precio: 160000,
+        categoty: "apple watch"
     },
     {
         id: "11" ,
@@ -89,7 +100,8 @@ const products = [
         description: "Pink - 128 GB",
         img: 'https://i.postimg.cc/rm4DCkwX/descarga.jpg',
         stock: 4,
-        precio: 160000
+        precio: 160000,
+        categoty: "airpods"
     },
     {
         id: "12" ,
@@ -97,7 +109,8 @@ const products = [
         description: "Blue Alpin - 128 GB",
         img: 'https://i.postimg.cc/BQWyMXrz/Apple-i-Phone-13-Pro-128-Go-Bleu-Alpin.jpg',
         stock: 2,
-        precio: 160000
+        precio: 160000,
+        categoty: "iphone"
     }
 ]
 
@@ -105,16 +118,21 @@ const ItemListContainer = ({greeting}) => { // greeting -> prop
 
     const [catalogo, SetCatalogo] = useState([])
 
-    //const {productId} = useParams()
+    const {categoryId} = useParams()
 
     useEffect(() => {
 
             const getData = new Promise((accept, reject) => {
                 accept(products)
             })
+            if (categoryId) {
+                getData.then(res => SetCatalogo(res.filter(products => products.categoty === categoryId)))
+            }
+            else {
             getData.then(res => SetCatalogo(res))
+            }
 
-    }, [])
+    }, [categoryId])
 
     return (
         <div className='main px-4 pt-2 d-flex flex-column justify-content-between align-items-center'>
