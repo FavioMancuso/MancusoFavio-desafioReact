@@ -1,0 +1,30 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+.detailprod {
+    width: 100%;
+    justify-content: space-around;
+    padding: 2rem 5rem;
+    background-color: white;
+}
+
+.detail_img_principal {
+    width: 100%;
+}
+
+.detail_img_secondary {
+    width: 100%;
+}
+
+.detail_description {
+    width: 100%;
+}
+
+.box {
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    border: 0.15rem solid white;
+    margin: 0 auto;
+}

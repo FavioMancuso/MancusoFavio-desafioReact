@@ -9,21 +9,33 @@ const Detail = ({data}) => {
     }
 
     return (
-        <div className='d-flex'>
-            <div className='detail d-flex flex-column align-items-center'>
+            <div className='detailprod d-flex'>
+                <div className="detail_img d-flex flex-column w-100">
+                    <div className="d-flex">
+                        <div className="detail_img_secondary my-auto">
+                            <div className="box my-1"></div>
+                            <div className="box my-1"></div>
+                            <div className="box my-1"></div>
+                            <div className="box my-1"></div>
+                            <div className="box my-1"></div>
+                            <div className="box my-1"></div>
+                        </div>
+                        <div className='detail_img_principal d-flex flex-column align-items-center'>
+                            <img src={data.img} width={450} alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div className='detail_description d-flex flex-column align-items-center justify-content-around'>
                 <p className='mb-0 pb-0 h5'>{data.name}</p>
-                <img src={data.img} width={250} alt="" />
-                <p className='h6 mt-3'>{data.description}</p>
+                <p className='h6'>{data.description}</p>
                 <p style={{fontWeight: "600"}}>${data.precio}</p>
                 <ItemCount initial={1} stock={data.stock} onAdd={addToCart}/>
+                    <p className='btn btn-outline-dark'>Devolución gratis</p>
+                    <p className='btn btn-outline-dark'>Medios de pago</p>
+                    <p className='btn btn-outline-dark'>Términos y condiciones</p>
+                </div>
             </div>
-            <div className='d-flex flex-column align-items-between'>
-                <p className='btn'>Devolución gratis</p>
-                <p className='btn'>Medios de pago</p>
-                <p className='btn'>Términos y condiciones</p>
-            </div>
-        </div>
-    )
-}
+        )
+    }
 
 export default Detail

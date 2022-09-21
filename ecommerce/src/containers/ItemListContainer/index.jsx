@@ -8,61 +8,79 @@ const products = [
         id: "1" ,
         name: "iPhone 12 Pro Max",
         description: "Silver - 128 GB",
-        img: 'https://i.postimg.cc/rwMH27FC/Buy-i-Phone-13-Pro-Max-128-GB-Silver-Verizon.png',
+        img: 'https://i.postimg.cc/gc5T7Hq1/iphonesilver.png',
         stock: 6,
         precio: 160000,
         categoty: "iphone"
     },
     {
         id: "2" ,
-        name: "iPhone 12 Pro Max",
-        description: "Pink - 128 GB",
-        img: 'https://i.postimg.cc/rm4DCkwX/descarga.jpg',
-        stock: 4,
-        precio: 160000,
-        categoty: "iphone"
+        name: "Apple Watch Blue",
+        description: "Apple Watch 14 Pro Life",
+        img: 'https://i.postimg.cc/W31ws8kG/awblue.jpg',
+        stock: 2,
+        precio: 60000,
+        categoty: "watch"
+    },
+    {
+        id: "19" ,
+        name: "Apple Watch Blue",
+        description: "Apple Watch 14 Pro Life",
+        img: 'https://i.postimg.cc/8k4PJV0B/awbrown.jpg',
+        stock: 2,
+        precio: 60000,
+        categoty: "watch"
+    },
+    {
+        id: "20" ,
+        name: "Apple Watch Blue",
+        description: "Apple Watch 14 Pro Life",
+        img: 'https://i.postimg.cc/htzS5QPp/awsilverm.jpg',
+        stock: 2,
+        precio: 60000,
+        categoty: "watch"
     },
     {
         id: "3" ,
-        name: "iPhone 12 Pro Max",
-        description: "Blue Alpin - 128 GB",
-        img: 'https://i.postimg.cc/BQWyMXrz/Apple-i-Phone-13-Pro-128-Go-Bleu-Alpin.jpg',
+        name: "Apple Watch White",
+        description: "Apple Watch 14 Pro Life",
+        img: 'https://i.postimg.cc/zfHwPvTN/awwhite.jpg',
         stock: 2,
-        precio: 160000,
-        categoty: "iphone"
+        precio: 60000,
+        categoty: "watch"
     },
     {
         id: "4" ,
         name: "iPhone 12 Pro Max",
         description: "Graphite - 128 GB",
-        img: 'https://i.postimg.cc/wThrP9Hj/iphone13promax2.jpg',
+        img: 'https://i.postimg.cc/bYFTJYZn/iphonegraphite.png',
         stock: 8,
-        precio: 160000,
-        categoty: "accessories"
-    },
-    {
-        id: "5" ,
-        name: "iPhone 12 Pro Max",
-        description: "Pink - 128 GB",
-        img: 'https://i.postimg.cc/rm4DCkwX/descarga.jpg',
-        stock: 4,
         precio: 160000,
         categoty: "iphone"
     },
     {
+        id: "5" ,
+        name: "MacBook White",
+        description: "PRO - 256GB - 16GB RAM",
+        img: 'https://i.postimg.cc/sg8PjT1R/macwhite.jpg',
+        stock: 4,
+        precio: 160000,
+        categoty: "macbook"
+    },
+    {
         id: "6" ,
-        name: "iPhone 12 Pro Max",
-        description: "Blue Alpin - 128 GB",
-        img: 'https://i.postimg.cc/BQWyMXrz/Apple-i-Phone-13-Pro-128-Go-Bleu-Alpin.jpg',
+        name: "MacBook BlackMatt",
+        description: "PRO - 256GB - 16GB RAM",
+        img: 'https://i.postimg.cc/nrphf9mD/macgraphitte.jpg',
         stock: 2,
         precio: 160000,
-        categoty: "ipad"
+        categoty: "macbook"
     },
     {
         id: "7" ,
         name: "iPhone 12 Pro Max",
         description: "Graphite - 128 GB",
-        img: 'https://i.postimg.cc/wThrP9Hj/iphone13promax2.jpg',
+        img: 'https://i.postimg.cc/bYFTJYZn/iphonegraphite.png',
         stock: 8,
         precio: 160000,
         categoty: "ipad"
@@ -71,34 +89,34 @@ const products = [
         id: "8" ,
         name: "iPhone 12 Pro Max",
         description: "Pink - 128 GB",
-        img: 'https://i.postimg.cc/rm4DCkwX/descarga.jpg',
+        img: 'https://i.postimg.cc/t4swMRSz/i-Phone-12-Pro-Max-pink.png',
         stock: 4,
         precio: 160000,
         categoty: "iphone"
     },
     {
         id: "9" ,
-        name: "iPhone 12 Pro Max",
-        description: "Blue Alpin - 128 GB",
-        img: 'https://i.postimg.cc/BQWyMXrz/Apple-i-Phone-13-Pro-128-Go-Bleu-Alpin.jpg',
+        name: "Apple Watch Graphite",
+        description: "Apple Watch 14 Pro Life",
+        img: 'https://i.postimg.cc/KjZH2m8z/awgraphite.jpg',
         stock: 2,
-        precio: 160000,
-        categoty: "mcbook"
+        precio: 60000,
+        categoty: "watch"
     },
     {
         id: "10" ,
-        name: "iPhone 12 Pro Max",
-        description: "Graphite - 128 GB",
-        img: 'https://i.postimg.cc/wThrP9Hj/iphone13promax2.jpg',
+        name: "Apple Watch Pink",
+        description: "Apple Watch 14 Pro Life",
+        img: 'https://i.postimg.cc/KzbBYN3q/awpink.jpg',
         stock: 8,
-        precio: 160000,
-        categoty: "apple watch"
+        precio: 60000,
+        categoty: "watch"
     },
     {
         id: "11" ,
         name: "iPhone 12 Pro Max",
         description: "Pink - 128 GB",
-        img: 'https://i.postimg.cc/rm4DCkwX/descarga.jpg',
+        img: 'https://i.postimg.cc/t4swMRSz/i-Phone-12-Pro-Max-pink.png',
         stock: 4,
         precio: 160000,
         categoty: "airpods"
@@ -107,7 +125,61 @@ const products = [
         id: "12" ,
         name: "iPhone 12 Pro Max",
         description: "Blue Alpin - 128 GB",
-        img: 'https://i.postimg.cc/BQWyMXrz/Apple-i-Phone-13-Pro-128-Go-Bleu-Alpin.jpg',
+        img: 'https://i.postimg.cc/dQzyy5Mt/iphone12blue.png',
+        stock: 2,
+        precio: 160000,
+        categoty: "iphone"
+    },
+    {
+        id: "13" ,
+        name: "MacBook Silver",
+        description: "PRO - 256GB - 16GB RAM",
+        img: 'https://i.postimg.cc/Tw6hc4tG/macsilver.jpg',
+        stock: 2,
+        precio: 160000,
+        categoty: "macbook"
+    },
+    {
+        id: "14" ,
+        name: "MacBook Silver",
+        description: "PRO - 256GB - 16GB RAM",
+        img: 'https://i.postimg.cc/Tw6hc4tG/macsilver.jpg',
+        stock: 2,
+        precio: 160000,
+        categoty: "macbook"
+    },
+    {
+        id: "15" ,
+        name: "MacBook Silver",
+        description: "PRO - 256GB - 16GB RAM",
+        img: 'https://i.postimg.cc/Tw6hc4tG/macsilver.jpg',
+        stock: 2,
+        precio: 160000,
+        categoty: "macbook"
+    },
+    {
+        id: "16" ,
+        name: "MacBook Silver",
+        description: "PRO - 256GB - 16GB RAM",
+        img: 'https://i.postimg.cc/Tw6hc4tG/macsilver.jpg',
+        stock: 2,
+        precio: 160000,
+        categoty: "macbook"
+    },
+    {
+        id: "17" ,
+        name: "iPhone 12 Pro Max",
+        description: "Blue Alpin - 128 GB",
+        img: 'https://i.postimg.cc/dQzyy5Mt/iphone12blue.png',
+        stock: 2,
+        precio: 160000,
+        categoty: "iphone"
+    },
+    {
+        id: "18" ,
+        name: "iPhone 12 Pro Max",
+        description: "Blue Alpin - 128 GB",
+        img: 'https://i.postimg.cc/dQzyy5Mt/iphone12blue.png',
         stock: 2,
         precio: 160000,
         categoty: "iphone"

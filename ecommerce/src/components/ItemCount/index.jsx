@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import {FaAngleDoubleDown, FaAngleDoubleUp} from 'react-icons/fa'
 import './styles.css'
 
 const ItemCount = ({initial, stock, onAdd}) => {
@@ -22,11 +23,10 @@ const ItemCount = ({initial, stock, onAdd}) => {
     }
     return (
         <div className='py-4 d-flex flex-column align-items-center'>
-            <div className='h6 mb-3'>Confirmar unidades:</div>
             <div className='d-flex w-100 align-items-baseline justify-content-between'>
-                <button className='btn btn-success' onClick={handleAdd}>Add</button>
+                <button className='btn btn-success' onClick={handleAdd}><FaAngleDoubleUp/></button>
                 <span>{itemCount}</span>
-                <button className='btn btn-danger' onClick={handleSupr}>Delete</button>
+                <button className='btn btn-danger' onClick={handleSupr}><FaAngleDoubleDown/></button>
             </div>
             <div className='btn mt-3 w-100 btn-primary' onClick={addCart}>Agregar al carrito</div>
         </div>
