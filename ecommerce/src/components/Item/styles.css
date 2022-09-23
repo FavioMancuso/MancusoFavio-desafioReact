@@ -33,6 +33,6 @@ box-sizing: border-box;}
 }
 
 .cardprod:hover .card {
-    box-shadow: 0.2rem 0.2rem 0.2rem 0rem black;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0rem rgb(145, 144, 144);
 }
 

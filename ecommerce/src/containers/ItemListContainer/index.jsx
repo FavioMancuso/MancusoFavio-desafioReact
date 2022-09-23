@@ -23,24 +23,6 @@ const products = [
         categoty: "watch"
     },
     {
-        id: "19" ,
-        name: "Apple Watch Blue",
-        description: "Apple Watch 14 Pro Life",
-        img: 'https://i.postimg.cc/8k4PJV0B/awbrown.jpg',
-        stock: 2,
-        precio: 60000,
-        categoty: "watch"
-    },
-    {
-        id: "20" ,
-        name: "Apple Watch Blue",
-        description: "Apple Watch 14 Pro Life",
-        img: 'https://i.postimg.cc/htzS5QPp/awsilverm.jpg',
-        stock: 2,
-        precio: 60000,
-        categoty: "watch"
-    },
-    {
         id: "3" ,
         name: "Apple Watch White",
         description: "Apple Watch 14 Pro Life",
@@ -183,6 +165,24 @@ const products = [
         stock: 2,
         precio: 160000,
         categoty: "iphone"
+    },
+    {
+        id: "19" ,
+        name: "Apple Watch Blue",
+        description: "Apple Watch 14 Pro Life",
+        img: 'https://i.postimg.cc/8k4PJV0B/awbrown.jpg',
+        stock: 2,
+        precio: 60000,
+        categoty: "watch"
+    },
+    {
+        id: "20" ,
+        name: "Apple Watch Blue",
+        description: "Apple Watch 14 Pro Life",
+        img: 'https://i.postimg.cc/htzS5QPp/awsilverm.jpg',
+        stock: 2,
+        precio: 60000,
+        categoty: "watch"
     }
 ]
 
