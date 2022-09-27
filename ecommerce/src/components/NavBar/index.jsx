@@ -32,8 +32,8 @@ const NavBar = () => {
                         </li>
                     </ul>
                     </div>
-                    <Link className="navbar-brand h8 align-contents-center mx-2" style={{fontSize: '1.15rem'}} to="#">AppleWorld<FaApple className='fs-4 mb-2 text-white'/></Link>
-                    <Link className='mx-4 text-decoration-none' to="#"><CartWidget/></Link>
+                    <Link className="navbar-brand h8 align-contents-center mx-2" style={{fontSize: '1.15rem'}} to="/">AppleWorld<FaApple className='fs-4 mb-2 text-white'/></Link>
+                    <Link className='mx-4 text-decoration-none' to="/cart"><CartWidget/></Link>
                 </div>
             </nav>
         </div>
