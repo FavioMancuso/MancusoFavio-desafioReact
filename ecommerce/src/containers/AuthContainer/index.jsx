@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { TextField, Button, CircularProgress } from "@mui/material";
+import { TextField, CircularProgress } from "@mui/material";
 import "./styles.css";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase/config";
