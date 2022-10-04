@@ -3,13 +3,18 @@ import NavBar from './components/NavBar';
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import ItemListContainer from './containers/ItemListContainer'
 import Cart from './components/Cart'
-import React from 'react';
+import React, { useEffect } from 'react';
 import CartProvider from './context/CartContext'
+import algoritmoGuardarDataProgramatica from './services/data';
 
 export const CartContext = React.createContext('')
 console.log('CartContext: ' , CartContext);
 
 function App() {
+
+  /*useEffect(() => {
+    algoritmoGuardarDataProgramatica()
+  }, [])*/
 
   return (
       <BrowserRouter>
