@@ -6,12 +6,9 @@ import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from '../../firebase/config';
 import './styles.css';
 
-const ItemListContainer = ({greeting}) => { // greeting -> prop
-
-    console.log(db);
+const ItemListContainer = ({greeting}) => { 
 
     const [catalogo, SetCatalogo] = useState([])
-
     const {categoryId} = useParams()
 
     useEffect(() => {

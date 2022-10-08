@@ -13,7 +13,7 @@ export const ItemDetailContainer = () => {
     useEffect(() => {
         const querydb = db;
         const queryDoc = doc(querydb, "products", productId);
-        getDoc(queryDoc) .then(res => SetData({id: res.id, ...res.data()}));
+        getDoc(queryDoc).then(res => SetData({id: res.id, ...res.data()}));
     }, [productId])
 
     return (

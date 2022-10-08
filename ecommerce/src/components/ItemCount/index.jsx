@@ -8,7 +8,7 @@ const ItemCount = ({initial, stock, onAdd}) => {
     const [itemCount , SetItemCount] = useState(1) // valor inicial // 1:02:00
 
     const handleAdd = () => {
-        if (itemCount <= stock) {
+        if (itemCount < stock) {
         SetItemCount(itemCount+1)
         } else {
             alert("No hay suficiente stock")

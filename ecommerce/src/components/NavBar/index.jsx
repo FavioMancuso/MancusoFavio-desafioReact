@@ -1,22 +1,11 @@
-import React from 'react';
+/*import React from 'react';
 import {Link} from 'react-router-dom';
 import {FaApple} from 'react-icons/fa'
 import CartWidget from '../CartWidget';
-import AuthContainer from '../../containers/AuthContainer';
-import { useState } from 'react';
+import Navbar from 'react-bootstrap/Navbar'
 import './styles.css';
 
 const NavBar = () => {
-
-    const [loginModal, setLoginModal] = useState(false)
-    const [singupModal, setSingupModal] = useState(false)
-    
-    const handleLogin = () => {
-        setLoginModal(true)
-    }
-    const handleSingup = () => {
-        setSingupModal(true)
-    }
 
     return (
         <div>
@@ -45,30 +34,52 @@ const NavBar = () => {
                     </ul>
                     </div>
                     <Link className="navbar-brand h8 align-contents-center mx-0" style={{fontSize: '1.15rem'}} to="/">AppleWorld<FaApple className='fs-4 mb-2 text-white'/></Link>
-                    <Link className='text-decoration-none mx-1' to="/cart"><CartWidget/></Link>
-                    <div className='buttons-container'>
-                        <span className='btn btn-primary mx-2' onClick={handleLogin}>
-                            Iniciar sesión
-                        </span>
-                        <span className='btn btn-outline-dark mx-2' onClick={handleSingup}>
-                            Registrarse
-                        </span>
-                    </div>
-                    {(loginModal || singupModal) && (
-                        <AuthContainer
-                            handleClose={() => {
-                                setLoginModal(false)
-                                setSingupModal(false)
-                            }}
-                            login={loginModal}
-                            signUp={singupModal}
-                        />
-                    )}
+                    <Link className='text-decoration-none mx-4' to="/cart"><CartWidget/></Link>
                 </div>
             </nav>
         </div>
-        
     )
 }
 
-export default NavBar
+export default NavBar*/
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+function CollapsibleExample() {
+  return (
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Nav>
+            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              Dank memes
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default CollapsibleExample;

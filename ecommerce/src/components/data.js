@@ -4,7 +4,7 @@ export const data = [
         name: "iPhone 12 Pro Max",
         description: "Silver - 128 GB",
         img: 'https://i.postimg.cc/gc5T7Hq1/iphonesilver.png',
-        stock: 6,
+        stock: 20,
         precio: 160000,
         category: "iphone"
     },
@@ -13,7 +13,7 @@ export const data = [
         name: "Apple Watch Blue",
         description: "Apple Watch 14 Pro Life",
         img: 'https://i.postimg.cc/W31ws8kG/awblue.jpg',
-        stock: 2,
+        stock: 20,
         precio: 60000,
         category: "watch"
     },
@@ -22,7 +22,7 @@ export const data = [
         name: "Apple Watch White",
         description: "Apple Watch 14 Pro Life",
         img: 'https://i.postimg.cc/zfHwPvTN/awwhite.jpg',
-        stock: 2,
+        stock: 20,
         precio: 60000,
         category: "watch"
     },
@@ -31,7 +31,7 @@ export const data = [
         name: "iPhone 12 Pro Max",
         description: "Graphite - 128 GB",
         img: 'https://i.postimg.cc/bYFTJYZn/iphonegraphite.png',
-        stock: 8,
+        stock: 20,
         precio: 160000,
         category: "iphone"
     },
@@ -40,7 +40,7 @@ export const data = [
         name: "MacBook White",
         description: "PRO - 256GB - 16GB RAM",
         img: 'https://i.postimg.cc/sg8PjT1R/macwhite.jpg',
-        stock: 4,
+        stock: 20,
         precio: 160000,
         category: "macbook"
     },
@@ -49,7 +49,7 @@ export const data = [
         name: "MacBook BlackMatt",
         description: "PRO - 256GB - 16GB RAM",
         img: 'https://i.postimg.cc/nrphf9mD/macgraphitte.jpg',
-        stock: 2,
+        stock: 20,
         precio: 160000,
         category: "macbook"
     },
@@ -58,7 +58,7 @@ export const data = [
         name: "iPhone 12 Pro Max",
         description: "Graphite - 128 GB",
         img: 'https://i.postimg.cc/bYFTJYZn/iphonegraphite.png',
-        stock: 8,
+        stock: 20,
         precio: 160000,
         category: "ipad"
     },
@@ -67,7 +67,7 @@ export const data = [
         name: "iPhone 12 Pro Max",
         description: "Pink - 128 GB",
         img: 'https://i.postimg.cc/t4swMRSz/i-Phone-12-Pro-Max-pink.png',
-        stock: 4,
+        stock: 20,
         precio: 160000,
         category: "iphone"
     },
@@ -76,7 +76,7 @@ export const data = [
         name: "Apple Watch Graphite",
         description: "Apple Watch 14 Pro Life",
         img: 'https://i.postimg.cc/KjZH2m8z/awgraphite.jpg',
-        stock: 2,
+        stock: 20,
         precio: 60000,
         category: "watch"
     },
@@ -85,7 +85,7 @@ export const data = [
         name: "Apple Watch Pink",
         description: "Apple Watch 14 Pro Life",
         img: 'https://i.postimg.cc/KzbBYN3q/awpink.jpg',
-        stock: 8,
+        stock: 20,
         precio: 60000,
         category: "watch"
     },
@@ -94,7 +94,7 @@ export const data = [
         name: "iPhone 12 Pro Max",
         description: "Pink - 128 GB",
         img: 'https://i.postimg.cc/t4swMRSz/i-Phone-12-Pro-Max-pink.png',
-        stock: 4,
+        stock: 20,
         precio: 160000,
         category: "airpods"
     },
@@ -103,7 +103,7 @@ export const data = [
         name: "iPhone 12 Pro Max",
         description: "Blue Alpin - 128 GB",
         img: 'https://i.postimg.cc/dQzyy5Mt/iphone12blue.png',
-        stock: 2,
+        stock: 20,
         precio: 160000,
         category: "iphone"
     },
@@ -112,7 +112,7 @@ export const data = [
         name: "MacBook Silver",
         description: "PRO - 256GB - 16GB RAM",
         img: 'https://i.postimg.cc/Tw6hc4tG/macsilver.jpg',
-        stock: 2,
+        stock: 20,
         precio: 160000,
         category: "macbook"
     },
@@ -121,7 +121,7 @@ export const data = [
         name: "MacBook Silver",
         description: "PRO - 256GB - 16GB RAM",
         img: 'https://i.postimg.cc/Tw6hc4tG/macsilver.jpg',
-        stock: 2,
+        stock: 20,
         precio: 160000,
         category: "macbook"
     },
@@ -130,7 +130,7 @@ export const data = [
         name: "MacBook Silver",
         description: "PRO - 256GB - 16GB RAM",
         img: 'https://i.postimg.cc/Tw6hc4tG/macsilver.jpg',
-        stock: 2,
+        stock: 20,
         precio: 160000,
         category: "macbook"
     },
@@ -139,7 +139,7 @@ export const data = [
         name: "MacBook Silver",
         description: "PRO - 256GB - 16GB RAM",
         img: 'https://i.postimg.cc/Tw6hc4tG/macsilver.jpg',
-        stock: 2,
+        stock: 20,
         precio: 160000,
         category: "macbook"
     },
@@ -148,7 +148,7 @@ export const data = [
         name: "iPhone 12 Pro Max",
         description: "Blue Alpin - 128 GB",
         img: 'https://i.postimg.cc/dQzyy5Mt/iphone12blue.png',
-        stock: 2,
+        stock: 20,
         precio: 160000,
         category: "iphone"
     },
@@ -157,7 +157,7 @@ export const data = [
         name: "iPhone 12 Pro Max",
         description: "Blue Alpin - 128 GB",
         img: 'https://i.postimg.cc/dQzyy5Mt/iphone12blue.png',
-        stock: 2,
+        stock: 20,
         precio: 160000,
         category: "iphone"
     },
@@ -166,7 +166,7 @@ export const data = [
         name: "Apple Watch Blue",
         description: "Apple Watch 14 Pro Life",
         img: 'https://i.postimg.cc/8k4PJV0B/awbrown.jpg',
-        stock: 2,
+        stock: 20,
         precio: 60000,
         category: "watch"
     },
@@ -175,7 +175,7 @@ export const data = [
         name: "Apple Watch Blue",
         description: "Apple Watch 14 Pro Life",
         img: 'https://i.postimg.cc/htzS5QPp/awsilverm.jpg',
-        stock: 2,
+        stock: 20,
         precio: 60000,
         category: "watch"
     }
