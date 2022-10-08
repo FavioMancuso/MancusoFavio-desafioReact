@@ -9,7 +9,7 @@ import {Modal , Button} from 'react-bootstrap'
 import Order from '../Order';
 
 const Cart = () => {
-    const {cart, totalPrice} = useCartContext()
+    const {cart, totalPrice, removeCart} = useCartContext()
     
     const [showModal, setShowModal] = useState(false)
     const [user, setUser] = useState(null)
@@ -59,6 +59,7 @@ const Cart = () => {
             <p className='text-center h6'>Precio total de su compra: ${totalPrice()}</p>
             <div className='d-flex justify-content-center'>
                 <Button className='my-3 btn btn-primary' onClick={handleModal}>Comfirmar compra</Button>
+                <Button className='my-3 btn btn-danger' onClick={removeCart()}>Vaciar carrito</Button>
                 <Modal show={showModal} onHide={handleModal} backdrop="static">
                     { user ? 
                     (

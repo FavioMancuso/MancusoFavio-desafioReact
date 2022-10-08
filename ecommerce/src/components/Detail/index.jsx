@@ -9,7 +9,6 @@ const Detail = ({data}) => {
     const {addProduct} = useCartContext()
 
     const addToCart = (cantidad) => {
-        console.log(`Se agregaron ${cantidad} unidades al carrito`)
         setGoToCart(true);
         addProduct(data, cantidad)
     }

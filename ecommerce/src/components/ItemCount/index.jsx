@@ -5,7 +5,7 @@ import './styles.css'
 
 const ItemCount = ({initial, stock, onAdd}) => {
 
-    const [itemCount , SetItemCount] = useState(1) // valor inicial // 1:02:00
+    const [itemCount , SetItemCount] = useState(1)
 
     const handleAdd = () => {
         if (itemCount < stock) {

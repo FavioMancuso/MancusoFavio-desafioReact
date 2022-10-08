@@ -9,7 +9,7 @@ const Order = () => {
     return (
         <>
         {
-            cart.map(product => <ItemOrder product={product}/>)
+            cart.map(product => <ItemOrder key={product} product={product}/>)
         }
         </>
     )
