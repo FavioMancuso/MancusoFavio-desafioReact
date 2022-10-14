@@ -9,10 +9,11 @@ import './styles.css';
 
 function CollapsibleExample() {
     return (
-        <Navbar collapseOnSelect expand="lg" style={{background: "#ebebeb"}}>
-            <Container>
-                <Navbar.Brand>
+        <Navbar className='mx-0 px-0' collapseOnSelect expand="lg" style={{background: "#ebebeb"}} sticky="top">
+            <Container className='d-flex flex-row-reverse'>
+                <Navbar.Brand className='d-flex align-items-center'>
                     <Link className="navbar-brand h8 align-contents-center mx-0" style={{fontSize: '1.15rem'}} to="/">AppleWorld<FaApple className='fs-4 mb-2 text-white'/></Link>
+                    <Link className='text-decoration-none mx-4' to="/cart"><CartWidget/></Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -30,13 +31,9 @@ function CollapsibleExample() {
                             <li className="nav-item mx-1">
                             <Link className="nav-link" to="/category/watch">Watch</Link>
                             </li>
-                            <li className="nav-item mx-1">
-                            <Link className="nav-link" to="/category/airpods">AirPods</Link>
-                            </li>
                         </ul>
                     </Nav>
                 </Navbar.Collapse>
-                <Link className='text-decoration-none mx-4' to="/cart"><CartWidget/></Link>
             </Container>
         </Navbar>
     );

@@ -14,20 +14,10 @@ const Detail = ({data}) => {
     }
 
     return (
-            <div className='detailprod d-flex'>
+            <div className='mainCart detailprod d-flex'>
                 <div className="detail_img d-flex flex-column w-100">
-                    <div className="d-flex">
-                        <div className="detail_img_secondary my-auto">
-                            <div className="box my-1"></div>
-                            <div className="box my-1"></div>
-                            <div className="box my-1"></div>
-                            <div className="box my-1"></div>
-                            <div className="box my-1"></div>
-                            <div className="box my-1"></div>
-                        </div>
-                        <div className='detail_img_principal d-flex flex-column align-items-center'>
-                            <img src={data.img} width={450} alt="" />
-                        </div>
+                    <div className='detail_img_principal d-flex flex-column align-items-center'>
+                        <img src={data.img} width={450} alt="" />
                     </div>
                 </div>
                 <div className='detail_description d-flex flex-column align-items-center justify-content-around'>
@@ -35,7 +25,14 @@ const Detail = ({data}) => {
                 <p className='h6'>{data.description}</p>
                 <p style={{fontWeight: "600"}}>${data.precio}</p>
                 {
-                    goToCart ?  <Link className='btn btn-success' to='/cart'>Finalizar compra</Link> : <ItemCount initial={1} stock={data.stock} onAdd={addToCart}/>
+                    goToCart 
+                    ?  
+                    <>
+                    <Link className='btn btn-success' to='/cart'>Mi carrito</Link>
+                    <Link className='btn btn-primary' to='/'>Seguir comprando</Link>
+                    </>
+                    : 
+                    <ItemCount initial={1} stock={data.stock} onAdd={addToCart}/>
                 }
                 <div className='d-flex flex-column'>
                     <p className='btn btn-outline-dark'>Medios de pago</p>

@@ -1,9 +1,8 @@
-import React/*, { useEffect } */from 'react';
+import React/*, { useEffect }*/ from 'react';
 import Routing from './routes';
-//import algoritmoGuardarDataProgramatica from './services/data';//
+//import algoritmoGuardarDataProgramatica from './services/data';
 
 export const CartContext = React.createContext('')
-console.log('CartContext: ' , CartContext);
 
 function App() {
 

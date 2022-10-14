@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import { createUserWithEmailAndPassword , signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase/config";
-import { onAuthStateChanged } from "firebase/auth";
 
 const AuthContainer = (props) => {
     const [log, setLog] = useState("false")
@@ -14,32 +13,21 @@ const AuthContainer = (props) => {
 
     const sumbit = () => {
         signInWithEmailAndPassword(auth, email, password)
-                .then((userCredential) => {
-                    console.log("Login");
-                    console.log(userCredential)
-                    props.setUser(userCredential)
-                })
+        .then((userCredential) => {
+            props.setUser(userCredential)
+        })
     }
 
     const register = () => {
         createUserWithEmailAndPassword(auth, emailNew, passwordNew, confirmPasswordNew)
-                .then((userCredential) => {
-                    console.log("Register");
-                    console.log(userCredential)
-                    props.setUser(userCredential)
-                })
-    }
-
-    useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-            if (user) {
-                console.log("email ingresado: " , user.email)
-            }
-        });
-    }, []);        
+        .then((userCredential) => {
+            props.setUser(userCredential)
+        })
+    }       
 
     return (
-        <>{log ? (<div className="container-fluid d-flex flex-column justify-content-center">
+        <>
+        {log ? (<div className="container-fluid d-flex flex-column justify-content-center">
         <p className="h5 text-center my-0">Inicia sesión</p>
         <label className="mt-2" htmlFor="email">Correo electrónico</label>
         <input className="my-2 p-1" type="email" id="email" onChange={(ev)=>setEmail(ev.target.value)}/>

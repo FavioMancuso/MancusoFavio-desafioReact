@@ -7,8 +7,8 @@ const CartWidget = () => {
 const {totalProducts} = useCartContext()
     return (
         <div className='cart mx-2'>
-            <RiShoppingCartLine className='fs-4 mb-2 mx-2'/>
-            <span>{totalProducts()}</span>
+            <RiShoppingCartLine className='mb-2 mx-2'/>
+            <span style={{fontSize: 16}}>{totalProducts()}</span>
         </div>
     )
 }
