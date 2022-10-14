@@ -7,4 +7,3 @@ En este proyecto, desarrollo una web ecommerce de simulación de productos Apple
 - **react-router-dom**: librería de routing
 - **firebase**: storage y servicios cloud
 
-Open [http://localhost:3000]
